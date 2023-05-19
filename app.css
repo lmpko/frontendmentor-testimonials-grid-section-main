@@ -50,24 +50,33 @@ section{
 
 section:first-child{
     background-color: var(--primary-color);
+    background-image: url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-x:calc(100% - 1.25rem) ;
+    grid-area: section1;
 }
 
 section:nth-child(2){
     background-color: var(--secondary-color);
+    grid-area: section2;
 }
 
 section:nth-child(3){
     background-color: var(--fouthary-color);
     color: var(--tertiary-color);
+    grid-area: section3;
 }
 
 section:nth-child(4){
     background-color: var(--tertiary-color);
+    grid-area: section4;
 }
 
 section:nth-child(5){
     background-color: var(--fouthary-color);
     color: var(--tertiary-color);
+    grid-area: section5;
 }
 
 section p{
@@ -77,4 +86,29 @@ section p{
 section:nth-child(3) p,
 section:nth-child(5) p{
     color: var(--secondary-color);
+}
+
+@media screen and (min-width: 48rem){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1f 1f;
+        grid-template-areas: 
+        "section1 section1 section2 section5"
+        "section3 section4 section4 section5";
+    }
+
+    section{
+        margin-right: 1.5625rem;
+    }
+
+    section:nth-child(5){
+       margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 75rem){
+    main{
+       max-width: 70rem;
+    }
 }
