@@ -1,0 +1,14 @@
+:root{
+    --primary-color: hsl(263, 55%, 52%);
+    --secondary-color: hsl(217, 19%, 35%);
+    --tertiary-color: hsl(219, 29%, 14%);
+    --fouthary-color: hsl(0, 0%, 100%);
+
+    --fifthary-color: hsl(0, 0%, 81%);
+    --sixthary-color:  hsl(210, 46%, 95%);
+}
+
+body{
+    font-size: .8125rem ;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
