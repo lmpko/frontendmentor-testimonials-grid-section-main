@@ -11,4 +11,70 @@
 body{
     font-size: .8125rem ;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--sixthary-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    padding: 4.375rem .9375rem;
+}
+
+.personal-container{
+    display: flex;
+    align-items: center;
+}
+
+.personal-container img{
+    border-radius: 50%;
+    margin-right: .9375rem ;
+}
+
+
+.personal-container h2{
+    margin: 0;
+}
+
+.personal-container span{
+    color: var(--fifthary-color);
+}
+
+section{
+    border-radius: .9375rem;
+    padding: 1.5625rem ;
+    margin-bottom: 1.25rem ;
+    color: var(--fouthary-color);
+}
+
+section:first-child{
+    background-color: var(--primary-color);
+}
+
+section:nth-child(2){
+    background-color: var(--secondary-color);
+}
+
+section:nth-child(3){
+    background-color: var(--fouthary-color);
+    color: var(--tertiary-color);
+}
+
+section:nth-child(4){
+    background-color: var(--tertiary-color);
+}
+
+section:nth-child(5){
+    background-color: var(--fouthary-color);
+    color: var(--tertiary-color);
+}
+
+section p{
+    color: var(--fifthary-color);
+}
+
+section:nth-child(3) p,
+section:nth-child(5) p{
+    color: var(--secondary-color);
 }
